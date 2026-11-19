@@ -1,0 +1,450 @@
+{
+ "ornith-1.5:9b think=off": {
+  "short": {
+   "json_extract": {
+    "pass": true,
+    "wall_s": 0.4,
+    "tok_s": 107.3,
+    "note": "{\"name\": \"Priya Raman\", \"email\": \"priya.r@example.com\", \"amount\": 1249.5}"
+   },
+   "py_palindrome": {
+    "pass": true,
+    "wall_s": 0.5,
+    "tok_s": 115.5,
+    "note": ""
+   },
+   "py_merge": {
+    "pass": true,
+    "wall_s": 1.1,
+    "tok_s": 113.9,
+    "note": ""
+   },
+   "py_bugfix": {
+    "pass": true,
+    "wall_s": 0.4,
+    "tok_s": 113.3,
+    "note": ""
+   },
+   "tool_weather": {
+    "pass": true,
+    "wall_s": 0.7,
+    "tok_s": 109.9,
+    "note": "{\"index\": 0, \"name\": \"get_weather\", \"arguments\": {\"city\": \"Toronto\", \"unit\": \"celsius\"}}"
+   },
+   "tool_pick": {
+    "pass": true,
+    "wall_s": 0.9,
+    "tok_s": 112.0,
+    "note": "{\"index\": 0, \"name\": \"create_event\", \"arguments\": {\"title\": \"Sync with Dana\", \"date\": \"2026-11-20\", "
+   },
+   "math": {
+    "pass": true,
+    "wall_s": 1.8,
+    "tok_s": 115.0,
+    "note": "10.5} = 3.642857...$$\n\nRounded to 2 decimals: **3.64**\n\n3.64"
+   },
+   "sql": {
+    "pass": true,
+    "wall_s": 0.7,
+    "tok_s": 116.4,
+    "note": "[('Ana', 150.0), ('Chen', 80.0), ('Dee', 10.0)]"
+   },
+   "regex": {
+    "pass": false,
+    "wall_s": 0.5,
+    "tok_s": 113.2,
+    "note": "^[BCEGHJ-PRSTV-Y][BCEFGHJ-PRSTV-Y]{2}[0-9][BCEFGHJ-PRSTV-Y][0-9]$"
+   },
+   "format": {
+    "pass": true,
+    "wall_s": 0.3,
+    "tok_s": 120.1,
+    "note": "- Local hardware failure wipes all copies simultaneously | - Fires or floods destroy on-site storage"
+   }
+  },
+  "long": {
+   "recall_16k": {
+    "pass": true,
+    "score": "3/3",
+    "prompt_tokens": 15764,
+    "prefill_tok_s": 4180,
+    "wall_s": 7.3,
+    "answer": "Q1: 7194-QX\nQ2: K-12\nQ3: 2026-03-09",
+    "placement": "6.3 GB 100% GPU"
+   },
+   "recall_32k": {
+    "pass": true,
+    "score": "3/3",
+    "prompt_tokens": 30495,
+    "prefill_tok_s": 4181,
+    "wall_s": 11.0,
+    "answer": "Q1: 7194-QX\nQ2: K-12\nQ3: 2026-03-09",
+    "placement": "7.3 GB 100% GPU"
+   },
+   "recall_64k": {
+    "pass": true,
+    "score": "3/3",
+    "prompt_tokens": 60359,
+    "prefill_tok_s": 3392,
+    "wall_s": 21.6,
+    "answer": "Q1: 7194-QX\nQ2: K-12\nQ3: 2026-03-09",
+    "placement": "8.2 GB 100% GPU"
+   },
+   "lru_ttl": {
+    "pass": false,
+    "note": "AssertionError",
+    "lines": 50,
+    "wall_s": 7.5
+   },
+   "calc": {
+    "pass": false,
+    "note": "AssertionError",
+    "lines": 114,
+    "wall_s": 10.0
+   },
+   "agent_fix": {
+    "pass": true,
+    "steps": 5,
+    "tool_calls": 7,
+    "wall_s": 11.8,
+    "final": "ALL PASSED 0"
+   }
+  }
+ },
+ "ornith-1.5:9b think=on": {
+  "short": {
+   "json_extract": {
+    "pass": true,
+    "wall_s": 1.1,
+    "tok_s": 104.9,
+    "note": "{\"name\": \"Priya Raman\", \"email\": \"priya.r@example.com\", \"amount\": 1249.5}"
+   },
+   "py_palindrome": {
+    "pass": true,
+    "wall_s": 2.3,
+    "tok_s": 105.8,
+    "note": ""
+   },
+   "py_merge": {
+    "pass": true,
+    "wall_s": 5.8,
+    "tok_s": 107.3,
+    "note": ""
+   },
+   "py_bugfix": {
+    "pass": true,
+    "wall_s": 3.7,
+    "tok_s": 111.2,
+    "note": ""
+   },
+   "tool_weather": {
+    "pass": true,
+    "wall_s": 0.8,
+    "tok_s": 107.9,
+    "note": "{\"index\": 0, \"name\": \"get_weather\", \"arguments\": {\"city\": \"Toronto\", \"unit\": \"celsius\"}}"
+   },
+   "tool_pick": {
+    "pass": true,
+    "wall_s": 2.1,
+    "tok_s": 103.7,
+    "note": "{\"index\": 0, \"name\": \"create_event\", \"arguments\": {\"title\": \"Sync with Dana\", \"date\": \"2026-11-20\", "
+   },
+   "math": {
+    "pass": true,
+    "wall_s": 2.6,
+    "tok_s": 103.6,
+    "note": "rs\n\n**Average rate:**\n- 38.25 \u00f7 10.5 = 3.642857...\n\n**3.64**"
+   },
+   "sql": {
+    "pass": true,
+    "wall_s": 5.4,
+    "tok_s": 103.5,
+    "note": "[('Ana', 150.0), ('Chen', 80.0), ('Dee', 10.0)]"
+   },
+   "regex": {
+    "pass": false,
+    "wall_s": 50.7,
+    "tok_s": 98.1,
+    "note": "^[ABCDEFGHJKLMNPRTVXY][0-9][ABCDEFGHJKLMNPRTVWXYZ][ ]?[0-9][ABCDEFGHJKLMNPRTVWXY"
+   },
+   "format": {
+    "pass": true,
+    "wall_s": 3.0,
+    "tok_s": 87.8,
+    "note": "- Protects against local hardware failure | - Guards against fire or physical disaster | - Prevents "
+   }
+  },
+  "long": {
+   "recall_16k": {
+    "pass": true,
+    "score": "3/3",
+    "prompt_tokens": 15762,
+    "prefill_tok_s": 3854,
+    "wall_s": 10.8,
+    "answer": "Q1: 7194-QX\nQ2: K-12\nQ3: 2026-03-09",
+    "placement": "6.6 GB 100% GPU"
+   },
+   "recall_32k": {
+    "pass": true,
+    "score": "3/3",
+    "prompt_tokens": 30493,
+    "prefill_tok_s": 4044,
+    "wall_s": 14.7,
+    "answer": "Q1: 7194-QX\nQ2: K-12\nQ3: 2026-03-09",
+    "placement": "7.6 GB 100% GPU"
+   },
+   "recall_64k": {
+    "pass": true,
+    "score": "3/3",
+    "prompt_tokens": 60357,
+    "prefill_tok_s": 3163,
+    "wall_s": 26.7,
+    "answer": "Q1: 7194-QX\nQ2: K-12\nQ3: 2026-03-09",
+    "placement": "8.5 GB 100% GPU"
+   },
+   "lru_ttl": {
+    "pass": true,
+    "note": "",
+    "lines": 51,
+    "wall_s": 136.7
+   },
+   "calc": {
+    "pass": false,
+    "note": "NameError: name 'evaluate' is not defined",
+    "lines": 1,
+    "wall_s": 153.4
+   },
+   "agent_fix": {
+    "pass": true,
+    "steps": 5,
+    "tool_calls": 7,
+    "wall_s": 27.3,
+    "final": "ALL PASSED 0"
+   }
+  }
+ },
+ "qwen3.8:27b think=off": {
+  "short": {
+   "json_extract": {
+    "pass": true,
+    "wall_s": 0.8,
+    "tok_s": 95.9,
+    "note": "{\"name\": \"Priya Raman\", \"email\": \"priya.r@example.com\", \"amount\": 1249.5}"
+   },
+   "py_palindrome": {
+    "pass": true,
+    "wall_s": 0.9,
+    "tok_s": 80.4,
+    "note": ""
+   },
+   "py_merge": {
+    "pass": true,
+    "wall_s": 1.7,
+    "tok_s": 88.8,
+    "note": ""
+   },
+   "py_bugfix": {
+    "pass": true,
+    "wall_s": 0.9,
+    "tok_s": 76.0,
+    "note": ""
+   },
+   "tool_weather": {
+    "pass": true,
+    "wall_s": 1.0,
+    "tok_s": 89.2,
+    "note": "{\"index\": 0, \"name\": \"get_weather\", \"arguments\": {\"city\": \"Toronto\", \"unit\": \"celsius\"}}"
+   },
+   "tool_pick": {
+    "pass": true,
+    "wall_s": 1.4,
+    "tok_s": 91.1,
+    "note": "{\"index\": 0, \"name\": \"create_event\", \"arguments\": {\"title\": \"Sync with Dana\", \"date\": \"2026-11-20\", "
+   },
+   "math": {
+    "pass": true,
+    "wall_s": 5.7,
+    "tok_s": 85.2,
+    "note": "e round down (keep the second digit as is).\n$$ 3.64 $$\n\n3.64"
+   },
+   "sql": {
+    "pass": false,
+    "wall_s": 1.4,
+    "tok_s": 84.1,
+    "note": "[('Ana', 100.0), ('Chen', 80.0), ('Ana', 50.0), ('Dee', 10.0)]"
+   },
+   "regex": {
+    "pass": false,
+    "wall_s": 1.2,
+    "tok_s": 59.4,
+    "note": "^[A-CEGHJKLM-NPR-TV-Z][0-9][A-CEGHJKLM-NPR-TV-Z] ?[0-9][A-CEGHJKLM-NPR-TV-Z][0-9"
+   },
+   "format": {
+    "pass": true,
+    "wall_s": 1.1,
+    "tok_s": 39.9,
+    "note": "- Fire destroys local hardware instantly. | - Ransomware encrypts connected storage. | - Theft steal"
+   }
+  },
+  "long": {
+   "recall_16k": {
+    "pass": true,
+    "score": "3/3",
+    "prompt_tokens": 15764,
+    "prefill_tok_s": 1203,
+    "wall_s": 19.6,
+    "answer": "Q1: 7194-QX\nQ2: K-12\nQ3: 2026-03-09",
+    "placement": "17 GB 100% GPU"
+   },
+   "recall_32k": {
+    "pass": true,
+    "score": "3/3",
+    "prompt_tokens": 30495,
+    "prefill_tok_s": 489,
+    "wall_s": 84.8,
+    "answer": "Q1: 7194-QX\nQ2: K-12\nQ3: 2026-03-09",
+    "placement": "18 GB 12%/88% CPU/GPU"
+   },
+   "recall_64k": {
+    "pass": true,
+    "score": "3/3",
+    "prompt_tokens": 60359,
+    "prefill_tok_s": 220,
+    "wall_s": 350.9,
+    "answer": "Q1: 7194-QX\nQ2: K-12\nQ3: 2026-03-09",
+    "placement": "19 GB 26%/74% CPU/GPU"
+   },
+   "lru_ttl": {
+    "pass": true,
+    "note": "",
+    "lines": 56,
+    "wall_s": 29.9
+   },
+   "calc": {
+    "pass": false,
+    "note": "ValueError: Unexpected character: -",
+    "lines": 144,
+    "wall_s": 15.8
+   },
+   "agent_fix": {
+    "pass": true,
+    "steps": 5,
+    "tool_calls": 7,
+    "wall_s": 18.6,
+    "final": "ALL PASSED 0"
+   }
+  }
+ },
+ "qwen3.8:27b think=on": {
+  "short": {
+   "json_extract": {
+    "pass": true,
+    "wall_s": 2.2,
+    "tok_s": 66.4,
+    "note": "{\"name\": \"Priya Raman\", \"email\": \"priya.r@example.com\", \"amount\": 1249.5}"
+   },
+   "py_palindrome": {
+    "pass": true,
+    "wall_s": 4.0,
+    "tok_s": 69.9,
+    "note": ""
+   },
+   "py_merge": {
+    "pass": true,
+    "wall_s": 8.7,
+    "tok_s": 68.8,
+    "note": ""
+   },
+   "py_bugfix": {
+    "pass": true,
+    "wall_s": 7.6,
+    "tok_s": 69.6,
+    "note": ""
+   },
+   "tool_weather": {
+    "pass": true,
+    "wall_s": 1.7,
+    "tok_s": 65.0,
+    "note": "{\"index\": 0, \"name\": \"get_weather\", \"arguments\": {\"city\": \"Toronto\", \"unit\": \"celsius\"}}"
+   },
+   "tool_pick": {
+    "pass": true,
+    "wall_s": 2.8,
+    "tok_s": 67.6,
+    "note": "{\"index\": 0, \"name\": \"create_event\", \"arguments\": {\"title\": \"Sync with Dana\", \"date\": \"2026-11-20\", "
+   },
+   "math": {
+    "pass": true,
+    "wall_s": 4.1,
+    "tok_s": 73.7,
+    "note": ":** 38.25 \u00f7 10.5 = 3.642857...\n\nRounded to 2 decimals:\n\n3.64"
+   },
+   "sql": {
+    "pass": false,
+    "wall_s": 6.1,
+    "tok_s": 70.5,
+    "note": "[('Ana', 100.0), ('Chen', 80.0), ('Ana', 50.0), ('Dee', 10.0)]"
+   },
+   "regex": {
+    "pass": true,
+    "wall_s": 7.3,
+    "tok_s": 73.0,
+    "note": "^[ABCEGHJKLMNPRSTVXY][0-9][ABCEGHJKLMNPRSTVWXYZ] ?[0-9][ABCEGHJKLMNPRSTVWXYZ][0-"
+   },
+   "format": {
+    "pass": true,
+    "wall_s": 4.9,
+    "tok_s": 62.9,
+    "note": "- Fire destroys local drives and data. | - Theft steals everything in one place. | - Ransomware wipe"
+   }
+  },
+  "long": {
+   "recall_16k": {
+    "pass": true,
+    "score": "3/3",
+    "prompt_tokens": 15762,
+    "prefill_tok_s": 677,
+    "wall_s": 100.4,
+    "answer": "Q1: 7194-QX\nQ2: K-12\nQ3: 2026-03-09",
+    "placement": "18 GB 7%/93% CPU/GPU"
+   },
+   "recall_32k": {
+    "pass": true,
+    "score": "3/3",
+    "prompt_tokens": 30493,
+    "prefill_tok_s": 380,
+    "wall_s": 208.2,
+    "answer": "Q1: 7194-QX\nQ2: K-12\nQ3: 2026-03-09",
+    "placement": "18 GB 15%/85% CPU/GPU"
+   },
+   "recall_64k": {
+    "pass": true,
+    "score": "3/3",
+    "prompt_tokens": 60357,
+    "prefill_tok_s": 336,
+    "wall_s": 380.7,
+    "answer": "Q1: 7194-QX\nQ2: K-12\nQ3: 2026-03-09",
+    "placement": "19 GB 29%/71% CPU/GPU"
+   },
+   "lru_ttl": {
+    "pass": true,
+    "note": "",
+    "lines": 56,
+    "wall_s": 40.3
+   },
+   "calc": {
+    "pass": true,
+    "note": "",
+    "lines": 92,
+    "wall_s": 49.0
+   },
+   "agent_fix": {
+    "pass": true,
+    "steps": 5,
+    "tool_calls": 7,
+    "wall_s": 74.4,
+    "final": "ALL PASSED 0"
+   }
+  }
+ }
+}
